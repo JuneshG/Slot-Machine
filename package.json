@@ -7,9 +7,12 @@
   "type": "commonjs",
   "main": "project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "jest"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
   }
 }

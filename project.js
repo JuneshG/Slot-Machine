@@ -163,7 +163,21 @@ const game = () => {
     }
 }
 
-game();
+// Export functions for testing
+module.exports = {
+    spin,
+    transpose,
+    getWinnings,
+    SYMBOLS_COUNT,
+    SYMBOL_VALUES,
+    ROWS,
+    COLS
+};
+
+// Only run the game if this file is executed directly (not imported for testing)
+if (require.main === module) {
+    game();
+}
         
 
 
