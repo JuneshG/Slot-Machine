@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎰 Slot Machine</h1>
+            <p class="subtitle">Test your luck!</p>
+        </header>
+
+        <!-- Balance Display -->
+        <div class="balance-section">
+            <div class="balance-card">
+                <span class="balance-label">Your Balance</span>
+                <span class="balance-amount" id="balance">$0</span>
+            </div>
+        </div>
+
+        <!-- Slot Machine Display -->
+        <div class="slot-machine">
+            <div class="reels-container">
+                <!-- Row 1 -->
+                <div class="reel-row">
+                    <div class="symbol" id="symbol-0-0">🍒</div>
+                    <div class="symbol" id="symbol-0-1">🍋</div>
+                    <div class="symbol" id="symbol-0-2">🍊</div>
+                </div>
+                <!-- Row 2 -->
+                <div class="reel-row">
+                    <div class="symbol" id="symbol-1-0">🍇</div>
+                    <div class="symbol" id="symbol-1-1">🍒</div>
+                    <div class="symbol" id="symbol-1-2">🍋</div>
+                </div>
+                <!-- Row 3 -->
+                <div class="reel-row">
+                    <div class="symbol" id="symbol-2-0">🍊</div>
+                    <div class="symbol" id="symbol-2-1">🍇</div>
+                    <div class="symbol" id="symbol-2-2">🍒</div>
+                </div>
+            </div>
+            
+            <!-- Winning Lines Indicators -->
+            <div class="lines-indicator" id="linesIndicator">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="controls-section">
+            <!-- Deposit Section -->
+            <div class="control-group" id="depositSection">
+                <label for="depositAmount">💰 Deposit Amount</label>
+                <div class="input-with-button">
+                    <input type="number" id="depositAmount" placeholder="Enter amount" min="1">
+                    <button class="btn btn-primary" id="depositBtn">Deposit</button>
+                </div>
+            </div>
+
+            <!-- Game Settings (hidden until deposit) -->
+            <div class="game-settings" id="gameSettings" style="display: none;">
+                <div class="settings-row">
+                    <div class="control-group">
+                        <label for="numberOfLines">📊 Lines to Bet (1-3)</label>
+                        <input type="number" id="numberOfLines" min="1" max="3" value="1">
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="betAmount">💵 Bet per Line</label>
+                        <input type="number" id="betAmount" placeholder="Bet amount" min="1">
+                    </div>
+                </div>
+
+                <div class="total-bet" id="totalBet">
+                    Total Bet: $0
+                </div>
+
+                <button class="btn btn-spin" id="spinBtn">
+                    <span class="spin-icon">🎰</span>
+                    SPIN
+                </button>
+            </div>
+        </div>
+
+        <!-- Result Display -->
+        <div class="result-section" id="resultSection" style="display: none;">
+            <div class="result-card">
+                <div class="result-label" id="resultLabel">You won!</div>
+                <div class="result-amount" id="resultAmount">$0</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ by Junesh Gautam | <a href="https://github.com/JuneshG/Slot-Machine" target="_blank">View on GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
