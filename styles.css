@@ -97,13 +97,20 @@ header h1 {
     color: var(--success-color);
 }
 
+/* ===== Game Layout (2-column grid) ===== */
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
 /* ===== Slot Machine ===== */
 .slot-machine {
     background: linear-gradient(145deg, #3d4e5e, #2c3e50);
     padding: 40px;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
-    margin-bottom: 30px;
     position: relative;
     border: 3px solid var(--primary-color);
 }
@@ -214,13 +221,15 @@ header h1 {
 
 .control-group input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 15px 18px;
     border: 2px solid var(--dark-bg);
     border-radius: 8px;
     background: var(--darker-bg);
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     transition: all 0.3s ease;
+    min-height: 50px;
 }
 
 .control-group input:focus {
@@ -229,13 +238,20 @@ header h1 {
     box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
 }
 
+.control-group input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
 .input-with-button {
     display: flex;
     gap: 10px;
+    align-items: stretch;
 }
 
 .input-with-button input {
     flex: 1;
+    min-width: 150px;
 }
 
 /* Settings Row */
@@ -378,6 +394,11 @@ footer a:hover {
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
+    /* Stack layout on mobile */
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+
     header h1 {
         font-size: 2rem;
     }

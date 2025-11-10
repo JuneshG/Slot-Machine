@@ -8,21 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- Header with Balance -->
         <header>
-            <h1>🎰 Slot Machine</h1>
-            <p class="subtitle">Test your luck!</p>
+            <div class="header-content">
+                <div>
+                    <h1>🎰 Slot Machine</h1>
+                    <p class="subtitle">Test your luck!</p>
+                </div>
+                <div class="balance-card-inline">
+                    <span class="balance-label">Balance</span>
+                    <span class="balance-amount" id="balance">$0</span>
+                </div>
+            </div>
         </header>
 
-        <!-- Balance Display -->
-        <div class="balance-section">
-            <div class="balance-card">
-                <span class="balance-label">Your Balance</span>
-                <span class="balance-amount" id="balance">$0</span>
-            </div>
-        </div>
-
-        <!-- Slot Machine Display -->
+        <!-- Main Game Area (2 columns on desktop) -->
+        <div class="game-layout">
         <div class="slot-machine">
             <div class="reels-container">
                 <!-- Row 1 -->
@@ -87,14 +88,15 @@
                     SPIN
                 </button>
             </div>
-        </div>
 
-        <!-- Result Display -->
-        <div class="result-section" id="resultSection" style="display: none;">
-            <div class="result-card">
-                <div class="result-label" id="resultLabel">You won!</div>
-                <div class="result-amount" id="resultAmount">$0</div>
+            <!-- Result Display -->
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label" id="resultLabel">You won!</div>
+                    <div class="result-amount" id="resultAmount">$0</div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Footer -->
