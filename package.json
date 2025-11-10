@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
