@@ -85,6 +85,9 @@ const getWinnings = (rows, bet, lines) => {
     for (let row = 0; row < lines; row++) {
         const symbols = rows[row];
         let allSame = true;
+        
+        console.log(`Row ${row}:`, symbols); // Debug log
+        
         for (const symbol of symbols) {
             if (symbol !== symbols[0]) {
                 allSame = false;
@@ -92,9 +95,11 @@ const getWinnings = (rows, bet, lines) => {
             }
         }
         if (allSame) {
+            console.log(`All same! Symbol: ${symbols[0]}, Value: ${SYMBOL_VALUES[symbols[0]]}, Bet: ${bet}`); // Debug log
             winnings += bet * SYMBOL_VALUES[symbols[0]];
         }
     }
+    console.log(`Total winnings: ${winnings}`); // Debug log
     return winnings;
 };
 
