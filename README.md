@@ -1,4 +1,4 @@
-# 🎰 Interactive Slot Machine Web Application
+#  Interactive Slot Machine Web Application
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success)](https://juneshg.github.io/Slot-Machine/)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)](https://github.com/JuneshG/Slot-Machine/actions)
@@ -6,11 +6,11 @@
 
 A full-stack slot machine game demonstrating proficiency in modern web development practices, automated testing, and continuous deployment pipelines.
 
-## 🚀 Live Application
+##  Live Application
 
 **[Play Now →](https://juneshg.github.io/Slot-Machine/)**
 
-## 📋 Project Overview
+##  Project Overview
 
 This project showcases a production-ready slot machine application built with vanilla JavaScript, featuring both a command-line interface (Node.js) and a modern web-based UI. The application implements comprehensive testing, version control best practices, and automated CI/CD workflows.
 
@@ -23,7 +23,7 @@ This project showcases a production-ready slot machine application built with va
 - **Modern UI/UX**: Smooth animations, real-time balance tracking, and intuitive controls
 - **Professional Architecture**: Modular code structure with clear separation of concerns
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 ### Frontend
 - **HTML5**: Semantic markup with accessible structure
@@ -43,7 +43,7 @@ This project showcases a production-ready slot machine application built with va
 - **GitHub Actions**: CI/CD automation for testing and deployment
 - **GitHub Pages**: Static site hosting with automatic deployments
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 slotMachine/
@@ -61,7 +61,7 @@ slotMachine/
 └── README.md                   # Project documentation
 ```
 
-## 🎮 How to Play
+##  How to Play
 
 ### Web Version
 1. Visit the [live application](https://juneshg.github.io/Slot-Machine/)
@@ -76,7 +76,7 @@ slotMachine/
 node project.js
 ```
 
-## 💻 Local Development
+##  Local Development
 
 ### Prerequisites
 - Node.js (v14.0.0 or higher)
@@ -112,7 +112,7 @@ node project.js
 npx serve .
 ```
 
-## 🧪 Testing
+##  Testing
 
 The project includes a comprehensive Jest test suite covering all core game mechanics:
 
@@ -131,7 +131,7 @@ View test coverage:
 npm test -- --coverage
 ```
 
-## 🔄 CI/CD Pipeline
+##  CI/CD Pipeline
 
 The project uses GitHub Actions for automated quality assurance:
 
@@ -142,7 +142,7 @@ The project uses GitHub Actions for automated quality assurance:
 
 View the workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 
-## 🎯 Game Mechanics
+##  Game Mechanics
 
 ### Symbol Probability Distribution
 | Symbol | Emoji | Count | Payout Multiplier |
@@ -158,14 +158,14 @@ View the workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 - **Total Bet**: Lines × Bet per Line
 - **Winnings**: Bet × Symbol Multiplier (per winning line)
 
-## 📊 Performance Optimizations
+##  Performance Optimizations
 
 - Efficient DOM manipulation with minimal reflows
 - CSS animations using GPU-accelerated transforms
 - Debounced input validation
 - Optimized asset loading
 
-## 🔐 Best Practices Implemented
+##  Best Practices Implemented
 
 - ✅ Semantic HTML5 markup
 - ✅ Modular, DRY code structure
@@ -177,7 +177,7 @@ View the workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 - ✅ Automated testing and deployment
 - ✅ Clean code principles
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
 - [ ] Backend API integration for leaderboards
 - [ ] User authentication and session persistence
@@ -187,18 +187,18 @@ View the workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 - [ ] Multiplayer functionality
 - [ ] Blockchain integration for provably fair gaming
 
-## 👨‍💻 Author
+##  Author
 
 **Junesh Gautam**
 
 - GitHub: [@JuneshG](https://github.com/JuneshG)
 - Project Link: [https://github.com/JuneshG/Slot-Machine](https://github.com/JuneshG/Slot-Machine)
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built as a demonstration of full-stack development capabilities
 - Inspired by modern web application architecture patterns
@@ -206,4 +206,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⭐ If you found this project interesting, please consider giving it a star!**
+** If you found this project interesting, please consider giving it a star!**
